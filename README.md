@@ -1,10 +1,8 @@
 # Docker Beispiele
-## 1_chroot
-## 2_run_hello_world
-## 3_erweiteres_Dockerfile
-## 4_eigenes_Basis_Imnage
-## 6_container_verbinden
-## 7_container_verbinden_docker_compose
-## CMD_ENTRYPOINT
-1. sdfsdf
-2. sdfsdf
+* Beispiel 1: chroot
+* Beispiel 2: run_hello_world
+* Beispiel 3: erweiteres_Dockerfile
+* Beispiel 4: eigenes_Basis_Imnage
+* Beispiel 6: container_verbinden
+* Beispiel 7: container_verbinden_docker_compose
+* Beispiel: CMD vs. ENTRYPOINT
