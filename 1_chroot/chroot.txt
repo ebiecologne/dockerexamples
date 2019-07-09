@@ -1,0 +1,1 @@
+debootstrap --arch=amd64 jessie ./chroot http://debian.netcologne.de/debian/

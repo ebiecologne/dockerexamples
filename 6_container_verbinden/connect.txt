@@ -1,0 +1,2 @@
+docker run --network webnet --rm --name webserver -e PMA_HOST=dbserver -p 80:80 -d phpmyadmin/phpmyadmin
+docker run --network webnet --rm --name dbserver --network-alias db -e MYSQL_ROOT_PASSWORD=abc123 -d mariadb:10.4
