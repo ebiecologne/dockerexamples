@@ -1,0 +1,51 @@
+#!/bin/bash
+	
+./configure \
+	--prefix=/usr/local/php7.3 \
+	--enable-bcmath  \
+	--enable-calendar  \
+	--enable-debug=no  \
+	--enable-exif  \
+	--enable-ftp \
+	--enable-intl \
+	--enable-mbstring \
+	--enable-shmop  \
+	--enable-soap  \
+	--enable-wddx  \
+	--enable-zip  \
+	--with-bz2  \
+	--with-curl  \
+	--with-gdbm  \
+	--with-gettext  \
+	--with-iconv  \
+	--with-imap  \
+	--with-imap-ssl  \
+	--with-kerberos  \
+	--with-libxml-dir=/usr  \
+	--with-mhash  \
+	--with-openssl  \
+	--without-pear  \
+	--with-png-dir=/usr  \
+	--with-tidy  \
+	--with-xsl  \
+	--with-zlib \
+	--with-gd \
+	--with-jpeg-dir=/usr \
+	--with-png-dir=/usr \
+	--with-zlib-dir=/usr \
+	--with-xpm-dir=/usr \
+	--with-freetype-dir=/usr \
+	--with-gettext \
+	--with-mhash \
+	--with-pdo-pgsql \
+	--with-pspell \
+	--with-libxml-dir=/usr \
+	--with-tidy \
+	--with-xmlrpc \
+	--with-iconv-dir=/usr \
+	--with-xsl \
+	--with-zlib-dir=/usr \
+	--with-pcre-dir=/usr \
+	--enable-mysqlnd --with-pdo-mysql --with-mysqli=mysqlnd \
+	--disable-opcache \
+	--with-pdo-mysql=mysqlnd
