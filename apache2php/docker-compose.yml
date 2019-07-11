@@ -1,0 +1,36 @@
+version: '3'
+
+services:
+  apache2debian:
+    image: apache2debian:latest
+    #restart: always
+    ports:
+      - 8888:80
+    volumes:
+      - /home/oeberlein/Data/_Projects/docker/dockerexamples/apache2php/content:/var/www/html
+    networks:
+      isolated:
+
+  php:
+      image: php:7.3-fpm-stretch
+      #restart: always
+      volumes:
+          - /home/oeberlein/Data/_Projects/docker/dockerexamples/apache2php/content:/var/www/html
+      ports:
+          - 9000:9000
+      #deploy:
+      #  resources:
+      #    limits:
+      #      cpus: '0.10'
+      #      memory: 50M
+      #    reservations:
+      #      cpus: '0.10'
+      #      memory: 20M
+      networks:
+        isolated:
+
+networks:
+  isolated:
+
+
+
