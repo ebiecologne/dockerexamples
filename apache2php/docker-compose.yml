@@ -18,14 +18,14 @@ services:
           - /home/oeberlein/Data/_Projects/docker/dockerexamples/apache2php/content:/var/www/html
       ports:
           - 9000:9000
-      #deploy:
-      #  resources:
-      #    limits:
-      #      cpus: '0.10'
-      #      memory: 50M
-      #    reservations:
-      #      cpus: '0.10'
-      #      memory: 20M
+      deploy:
+        resources:
+          limits:
+            cpus: '0.10'
+            memory: 50M
+          reservations:
+            cpus: '0.10'
+            memory: 20M
       networks:
         isolated:
 

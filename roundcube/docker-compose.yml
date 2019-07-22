@@ -1,0 +1,49 @@
+# docker stack deploy -c docker-compose.yml roundcube
+# docker stack rm roundcube
+# docker stack ps roundcube
+
+version: '3'
+
+services:
+  apache2:
+    image: roundcube:latest
+    # image: roundcube/roundcubemail
+    
+    #deploy:
+    #  resources:
+    #    limits:
+    #      cpus: '0.50'
+    #      memory: 50M
+    #    reservations:
+    #      cpus: '0.25'
+    #      memory: 20M
+
+    #restart: always
+    ports:
+      - 8080:80
+      - 4443:443
+    volumes:
+      - /home/oeberlein/Data/_Projects/docker/compose/roundcube/content:/var/www/html
+    #extra_hosts:
+    #  - "webdb01:10.20.30.12"
+    #  - "webdb01.netcologne.de:10.20.30.12"
+    #  - "webdb.local:10.20.30.12"
+    networks:
+      isolated:
+
+  dbserver:
+    image: mariadb:10.4
+    environment:
+      MYSQL_ROOT_PASSWORD: 7UfFVxJUMz
+      MYSQL_DATABASE: roundcube
+      MYSQL_USER: roundcube
+      MYSQL_PASSWORD: rc2019
+      
+    networks:
+      isolated:
+    volumes:
+      - /home/oeberlein/Data/_Projects/docker/compose/roundcube/mysql:/var/lib/mysql
+
+
+networks:
+  isolated:
