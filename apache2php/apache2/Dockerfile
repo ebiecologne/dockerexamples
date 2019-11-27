@@ -1,3 +1,6 @@
+# docker build --no-cache -t apache2debian:latest ./apache2
+
+
 # Install Debian 9.x
 FROM debian:stretch-slim
 MAINTAINER Oliver Eberlein <oliver.eberlein@netcologne.de>

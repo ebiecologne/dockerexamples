@@ -1,8 +1,0 @@
-docker run --rm -it \
-	--volume=/srv/webcluster01/htdocs:/htdocs \
-	--volume=/srv/webcluster01/dehydrated/certs:/srv/dehydrated/certs \
-	--volume=/srv/webcluster01/apache2_virtual-server-80-443:/etc/apache2/virtual-server-80-443 \
-	--volume=/srv/webcluster01/apache2_redirect-server:/etc/apache2/redirect-server \
-	--publish=80:80 \
-	--publish=443:443 \
-git.netcologne.de:4567/oeberlein/apache2whnc bash

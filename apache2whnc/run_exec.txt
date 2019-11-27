@@ -1,9 +1,0 @@
-docker run -it --rm \
-	--volume=/srv/webcluster01/htdocs:/htdocs \
-	--volume=/srv/webcluster01/dehydrated/certs:/srv/dehydrated/certs \
-	--volume=/srv/webcluster01/apache2_virtual-server:/etc/apache2/virtual-server \
-	--volume=/srv/webcluster01/apache2_virtual-server-ssl:/etc/apache2/virtual-server-ssl \
-	--volume=/srv/webcluster01/apache2_redirect-server:/etc/apache2/redirect-server \
-	--publish=80:80 \
-	--publish=443:443 \
-apache2whnc:latest bash
