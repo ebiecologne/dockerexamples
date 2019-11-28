@@ -7,6 +7,7 @@
 * Beispiel 6: Image in den Docker-Hub hochladen
 * Beispiel 7: Container untereinander verbinden
 * Beispiel 8: Container untereinander verbinden mittels Docker-Compose
+* Beispiel 9: HAProxy für Swarm hinzugefuegt
 
 
 [1  Was ist Docker?](https://wiki.7i.de/index.php?title=Docker-Schulung#Was_ist_Docker.3F)
